@@ -1,0 +1,78 @@
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;            
+  background: url("images/brg-backround.jpg") no-repeat right center / cover;
+  z-index: -1;
+  pointer-events: none;
+  
+}
+
+body{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 8px;
+    min-height: 100vh;
+}
+
+.top{
+    grid-column: span 5 / span 5;
+}
+
+.content{
+    grid-column: span 3 / span 3;
+    grid-row: span 3 / span 3;
+    grid-row-start: 2;
+
+}
+
+section{
+    padding-bottom: 2rem;
+}
+
+.bottom{
+    grid-column: span 5 / span 5;
+    grid-row-start: 5;
+}
+
+header{
+    text-align: center;
+}
+
+nav ul {
+
+    list-style: none;        
+    display: flex;            
+    justify-content: center;  
+    align-items: center;
+    padding: 0;               
+    margin: 0;
+    background-color:rgb(118, 118, 118);
+    min-height: 3rem;
+    border: 10px solid rgba(0, 0, 0, 0.651);
+}
+
+nav li {
+    padding: 0 0.5rem;
+
+}
+
+nav a {
+    text-decoration: none; 
+    color: white; 
+    vertical-align: middle;
+    font-size: 1.4rem; 
+     
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+nav li:not(:last-child) {
+    border-right: 1px solid white;
+}
+
