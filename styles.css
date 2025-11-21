@@ -14,7 +14,8 @@ body{
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(5,1fr);
     gap: 8px;
-    min-height: 100vh;
+    height: 125vh;
+    color: rgb(255, 194, 52)
 }
 
 .top{
@@ -33,6 +34,10 @@ section{
 }
 
 .bottom{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
     grid-column: span 5 / span 5;
     grid-row-start: 5;
 }
@@ -49,9 +54,9 @@ nav ul {
     align-items: center;
     padding: 0;               
     margin: 0;
-    background-color:rgb(118, 118, 118);
+
     min-height: 3rem;
-    border: 10px solid rgba(0, 0, 0, 0.651);
+
 }
 
 nav li {
@@ -76,3 +81,6 @@ nav li:not(:last-child) {
     border-right: 1px solid white;
 }
 
+.centerText {
+    text-align: center;
+}
