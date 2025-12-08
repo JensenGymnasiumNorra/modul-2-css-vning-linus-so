@@ -47,7 +47,7 @@ header{
 }
 
 nav ul {
-
+    /* Test */
     list-style: none;        
     display: flex;            
     justify-content: center;  
@@ -84,3 +84,21 @@ nav li:not(:last-child) {
 .centerText {
     text-align: center;
 }
+
+
+
+
+.centerText table {
+    margin: 0 auto;            
+    border-collapse: collapse;
+    width: auto;               
+    max-width: 90%;            
+}
+
+.centerText th,
+.centerText td {
+    text-align: center;        
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+}
+
